@@ -44,7 +44,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
 
-    path('api/', include('router.urls')),
     path('api-auth/v1', include('rest_framework.urls', namespace='rest_framework'))
 
 ]
