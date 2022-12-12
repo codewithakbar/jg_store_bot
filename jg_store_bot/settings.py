@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = '/home/akbar2day/jgbot/media'
+MEDIA_ROOT = '/home/akbar2day/jg_store_bot/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/akbar2day/jgbot/static'
+STATIC_ROOT = '/home/akbar2day/jg_store_bot/static'
 STATIC_URL = '/static/'
