@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'api',
+    'ugc',
 ]
 
 MIDDLEWARE = [
@@ -140,4 +146,4 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/akbar2day/jg_store_bot/static'
 STATIC_URL = '/static/'
 
-TOKEN = '5207577524:AAFWyFgWKd_yZCzSqiULfKNZ2GQb8yWI-h0'
+TOKEN = os.getenv("TOKEN")

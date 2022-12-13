@@ -4,3 +4,6 @@ djangorestframework
 markdown
 django-filter
 requests
+aiogram
+python-dotenv
+
