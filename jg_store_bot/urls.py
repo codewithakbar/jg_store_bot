@@ -19,6 +19,8 @@ from django.urls import path, include
 from api.views import index
 from api.models import Product
 
+from api.views import UpdateBot
+
 
 from django.urls import path, include
 from django.contrib.auth.models import User
@@ -57,6 +59,9 @@ router.register(r'products', ProductViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
+
+    path('bot/', UpdateBot.as_view(), name='update'),
+
     path('api/', include(router.urls)),
 
     path('api-auth/v1/', include('rest_framework.urls', namespace='rest_framework'))

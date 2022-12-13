@@ -139,3 +139,5 @@ MEDIA_ROOT = '/home/akbar2day/jg_store_bot/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/akbar2day/jg_store_bot/static'
 STATIC_URL = '/static/'
+
+TOKEN = '5207577524:AAFWyFgWKd_yZCzSqiULfKNZ2GQb8yWI-h0'
