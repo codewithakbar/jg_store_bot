@@ -7,3 +7,4 @@ requests
 aiogram
 python-dotenv
 
+django-cors-headers
